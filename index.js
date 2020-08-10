@@ -7,6 +7,7 @@ window.addEventListener('DOMContentLoaded',function(){
         var element = e.target.parentElement.parentElement;
         element.classList.remove('not-complete')
         element.classList.add('complete')
+        e.target.remove();
         list_complete.appendChild(element);
    }
    function onRemove(e){
